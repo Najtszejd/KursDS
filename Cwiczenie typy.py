@@ -77,8 +77,20 @@
 # Znajdź liczby, które są podzielne przez 7 i są wielokrotnością 5 w zakresie
 # 6:09
 # Napisz program w Pythonie, aby znaleźć liczby podzielne przez 7 i będące wielokrotnością 5 między 1500 a 2700 (obie uwzględnione)
-x = 1500
-while x <= 2700 and x >= 1500:
-    if x % 7 == 0 and x % 5 ==0:
-        print ("Liczba", x, "jest podzielna przez 5 oraz jest wielokrotnością 7")
-    x+=1
+# x = 1500
+# while x <= 2700 and x >= 1500:
+#     if x % 7 == 0 and x % 5 ==0:
+#         print ("Liczba", x, "jest podzielna przez 5 oraz jest wielokrotnością 7")
+#     x+=1
+
+
+
+
+
+
+# Napisz program, który policzy największy wspólny dzielnik dwóch liczb podanych przez użytkownika
+# W tym celu użyj operatora % oraz pętli for
+
+# x1 = float(input("Podaj pierwszą liczbę"))
+# x2 = float(input("Podaj drugą liczbę"))
+# for i in range ()
