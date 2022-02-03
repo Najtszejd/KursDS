@@ -2,5 +2,4 @@
 # print("Czesc")
 # sleep(2)
 # print("Nara")
-# import os
-# print(dir(os))
+

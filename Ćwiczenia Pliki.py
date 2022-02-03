@@ -49,25 +49,25 @@
 # Napisz program, który otworzy plik sonety.txt i sprawdzi liczbę słów w całym tekście
 # Dodatkowo, napisz funkcję, która zlicza słowa tylko w co 7 linijce tekstu
 
-words = 0
-with open("sonety.txt","r",encoding="utf8") as file:
-    file_word = file.read().split(" ")
-    for i in file_word:
-        words +=1
-print("\nW pliku {} znajduje się {} słów \n".format("sonety.txt",words))
-
-# funkcja licząca słowa w co 7 linii
-# file_check = input("Podaj nazwe pliku wraz z odpowiednim rozszerzeniem ")
-def file_lanes(file_check):
-    count = 0                                                # licznik linii
-    with open(file_check,"r",encoding="utf8") as file_lanes: # otwieramy plik, argument = nazwa pliku z rozszerzeniem
-        lanes = file_lanes.readlines()                       # przypisujemy do zmiennej każda linie pliku
-    for lane in lanes:                                       # pętla, która przechodzi przez każda linie w tekscie
-        count += 1                                           # licznik liczący linie
-        if count % 7 == 0:                                   # jeśli licznik dzieli się przez 7 to działamy dalej
-            count_word = 0                                   # ustawiamy i resetujemy licznik słow
-            lane_count = lane.split(" ")                     # dzielimy aktualną linie na ze względu na spacje (oddzielamy słowa)
-            for i in lane_count:                             # pętla przechodząca przez każde słowo w linii
-                count_word +=1                               # zwięszkenie licznika słow
-            print("Linia {} brzmi: \n{} ----> zawiera {} słów\n".format(count, lane, count_word))   #komunikat
-print(file_lanes("sonety.txt"))                               # test funkcji, można wykorzystać na dowolnym pliu
+# words = 0
+# with open("sonety.txt","r",encoding="utf8") as file:
+#     file_word = file.read().split(" ")
+#     for i in file_word:
+#         words +=1
+# print("\nW pliku {} znajduje się {} słów \n".format("sonety.txt",words))
+#
+# # funkcja licząca słowa w co 7 linii
+# # file_check = input("Podaj nazwe pliku wraz z odpowiednim rozszerzeniem ")
+# def file_lanes(file_check):
+#     count = 0                                                # licznik linii
+#     with open(file_check,"r",encoding="utf8") as file_lanes: # otwieramy plik, argument = nazwa pliku z rozszerzeniem
+#         lanes = file_lanes.readlines()                       # przypisujemy do zmiennej każda linie pliku
+#     for lane in lanes:                                       # pętla, która przechodzi przez każda linie w tekscie
+#         count += 1                                           # licznik liczący linie
+#         if count % 7 == 0:                                   # jeśli licznik dzieli się przez 7 to działamy dalej
+#             count_word = 0                                   # ustawiamy i resetujemy licznik słow
+#             lane_count = lane.split(" ")                     # dzielimy aktualną linie na ze względu na spacje (oddzielamy słowa)
+#             for i in lane_count:                             # pętla przechodząca przez każde słowo w linii
+#                 count_word +=1                               # zwięszkenie licznika słow
+#             print("Linia {} brzmi: \n{} ----> zawiera {} słów\n".format(count, lane, count_word))   #komunikat
+# print(file_lanes("sonety.txt"))                               # test funkcji, można wykorzystać na dowolnym pliu
